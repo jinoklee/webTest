@@ -25,7 +25,7 @@ ui <-shiny:: fluidRow(
   tags$head(tags$style("#shiny-disconnected-overlay {display: none !important;}")),
   includeCSS("www/css/common.css"),
   includeHTML("www/main.html")
-  #htmlOutput("mainpage")
+  DT::dataTableOutput("anovadata")
   )
     
 
